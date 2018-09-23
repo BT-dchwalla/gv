@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="gfvi_prototype_add_sol_to_pol_view_form" model="ir.ui.view">
+        <field name="name">gfvi_prototype.add_sol_to_pol.form</field>
+        <field name="model">gfvi_prototype.add_sol_to_pol</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="product_id"/>
+                    <field name="max_quantity"/>
+                    <field name="purchase_order_line_id" invisible="1"/>
+                </group>
+                <notebook>
+                    <page string="Lines">
+                        <field name="details_ids">
+                            <tree editable="bottom">
+                                <field name="sale_order_id"/>
+                                <field name="quantity" sum="Total"/>
+                            </tree>
+                            <form>
+                                <group>
+                                    <field name="sale_order_id"/>
+                                    <field name="quantity" sum="Total"/>
+                                </group>
+                            </form>
+                        </field>
+                    </page>
+                </notebook>
+                <footer>
+                    <button string="Create lines" name="create_sol" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-default" special="cancel"/>
+                </footer>
+           </form>
+        </field>
+    </record>
+
+</odoo>
