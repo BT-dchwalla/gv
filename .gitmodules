@@ -1,8 +1,0 @@
-[submodule "ext/gv_prototype"]
-	path = ext/gv_prototype
-	url = git@github.com:BT-dchwalla/gv.git
-	branch = master
-[submodule "ext/server-tools/onchange_helper"]
-	path = ext/server-tools/onchange_helper
-	url = git@github.com:OCA/server-tools.git
-	branch = 11.0

@@ -1,0 +1,17 @@
+git_repositories:
+  - repository: git@github.com:brain-tec/odoo.git
+    branch: 11.0
+    commitortag: c40c7ad787d3d6965eb1ffb11f175fcc6ee5da1e
+    maindir: True
+    shallow: True
+  - repository: git@github.com:brain-tec/enterprise.git
+    branch: 11.0
+    commitortag: 7c2e4e3f4a573f39bdb02ea2b193710f3d2f1210
+    maindir: True
+    shallow: True
+  - repository: git@github.com:OCA/server-tools.git
+    branch: 11.0
+    commitortag: 24576abf04d41f07b48c07dcec4e82a18adbe9c6
+    addons:
+      - onchange_helper
+
