@@ -16,7 +16,7 @@ git_repositories:
       - onchange_helper
   - repository: git@github.com:BT-dchwalla/gv.git
     branch: master
-    commitortag: 7c7b618254792c306d383a18c353a77b915961ee
+    commitortag: e54cd299259c6d797b46ae56b79c2b291c573904
     addons:
       - gv_prototype
 
